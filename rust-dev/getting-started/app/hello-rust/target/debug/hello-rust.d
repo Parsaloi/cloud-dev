@@ -1,0 +1,1 @@
+/home/parsa/Documents/arch-parsa/Development/mini-projects/cloud-dev/rust-dev/getting-started/app/hello-rust/target/debug/hello-rust: /home/parsa/Documents/arch-parsa/Development/mini-projects/cloud-dev/rust-dev/getting-started/app/hello-rust/src/main.rs
