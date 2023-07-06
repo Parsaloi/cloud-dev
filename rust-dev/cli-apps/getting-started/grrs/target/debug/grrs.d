@@ -1,0 +1,1 @@
+/home/parsa/Documents/arch-parsa/Development/mini-projects/cloud-dev/rust-dev/cli-apps/getting-started/grrs/target/debug/grrs: /home/parsa/Documents/arch-parsa/Development/mini-projects/cloud-dev/rust-dev/cli-apps/getting-started/grrs/src/main.rs
