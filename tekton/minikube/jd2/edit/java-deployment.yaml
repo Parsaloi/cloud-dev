@@ -7,21 +7,6 @@ spec:
   selector:
     matchLabels:
       app: quarkus-app
-    template:
-      metadata:
-        labels:
-          app: quarkus-app
-      spec:
-        affinity:
-          nodeAffinity:
-            prefferedDuringSchedulingIgnoredDuringExecution:
-              - weight: 100
-                preference:
-                  matchExpressions:
-                    - key: kubernetes.io/hostname
-                      operator: NotIn
-                      values:
-                        - "multinode-demo"
        topologySpreadConstraints:
          - maxSkew: 1
            topologyKey: kubernetes.io/hostname
