@@ -1,0 +1,3 @@
+[submodule "tekton/tekton-tutorial-greeter"]
+	path = tekton/tekton-tutorial-greeter
+	url = git@github.com:gitops-cookbook/tekton-tutorial-greeter.git

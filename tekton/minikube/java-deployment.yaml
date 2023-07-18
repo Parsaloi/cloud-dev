@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quarkus-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: quarkus-app
+    template:
+      metadata:
+        labels:
+          apps: quarkus-app
+      spec:
+        affinity:
+          nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              nodeSelectorTerms:
+                - matchExpressions:
+                  - key: <node-label-key>
+                    operator: In
+                    values:
+                      - <node-label-value>
+       topologySpreadConstraints:
+         - maxSkew: 1
+           topologyKey: kubernetes.io/hostname
+           whenUnsatisfiable: DoNotSchedule
+           labelSelector:
+             matchLabels:
+               app: quarkus-app
+      containers:
+        - name: java-app
+          image: docker.io/creatorp/java-app:latest
+          ports:
+            - containerPort: 8080
+              resources:
+                limits:
+                  cpu: "4"
+                  memory: "4Gi"
+                requests:
+                  cpu: "500m"
+                  memory: "512Mi"
+
