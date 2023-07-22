@@ -1,3 +1,6 @@
 [submodule "tekton/tekton-tutorial-greeter"]
 	path = tekton/tekton-tutorial-greeter
 	url = git@github.com:gitops-cookbook/tekton-tutorial-greeter.git
+[submodule "java-dev/ui-ux/patternfly-react-seed"]
+	path = java-dev/ui-ux/patternfly-react-seed
+	url = git@github.com:patternfly/patternfly-react-seed.git
