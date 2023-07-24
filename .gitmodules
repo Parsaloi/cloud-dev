@@ -4,3 +4,6 @@
 [submodule "java-dev/ui-ux/patternfly-react-seed"]
 	path = java-dev/ui-ux/patternfly-react-seed
 	url = git@github.com:patternfly/patternfly-react-seed.git
+[submodule "k8s-dev/client"]
+	path = k8s-dev/client
+	url = git@github.com:knative/client.git
