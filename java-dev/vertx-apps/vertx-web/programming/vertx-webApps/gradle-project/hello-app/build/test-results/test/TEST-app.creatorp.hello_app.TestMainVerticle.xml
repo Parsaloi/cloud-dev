@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.creatorp.hello_app.TestMainVerticle" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-25T16:23:15" hostname="parsa-hpenvylaptop13aq1xxx" time="0.854">
+  <properties/>
+  <testcase name="verticle_deployed(Vertx, VertxTestContext)" classname="app.creatorp.hello_app.TestMainVerticle" time="0.854"/>
+  <system-out><![CDATA[HTTP server started on port 8888
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
