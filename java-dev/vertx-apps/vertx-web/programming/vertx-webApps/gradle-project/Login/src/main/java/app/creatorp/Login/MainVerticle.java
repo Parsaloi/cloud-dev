@@ -13,7 +13,7 @@ public class MainVerticle extends AbstractVerticle {
     TemplateEngine engine = PebbleTemplateEngine.create(vertx);
 
     // ...with your new PebbleEngine instance you can start compiling templates:
-    PebblTemplate compiledTemplate = engine.getTemplate("webroot/home.html");
+    PebbleTemplate compiledTemplate = engine.getTemplate("resources/WEB-INF/home.html");
 
     // Finaly, simply provide your compiled template with a java.io.Writer object and a Map of variables (the context) to get your output!
     // Write writer = new StringWriter();
